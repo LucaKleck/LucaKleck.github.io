@@ -1,91 +1,118 @@
 body {
     margin: 0;
     inset: 0;
-    background-color: #263238;
-    color: #4a555a;
+    background-color: #344249;
+    color: #0b0d0e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
-    color: rgb(78, 92, 99);
+    color: #b6b6b6;
     font-style: normal;
     font-variant: small-caps;
     text-decoration: none;
 }
 
 a:hover {
-    color: #90A4AE;
+    color: #b6b6b6;
 }
 
 a:active {
-    color: #546E7A;
+    color: #b6b6b6;
 }
 
 a:visited {
-    color: #607D8B;
+    color: #b6b6b6;
 }
 
-    /* Tooltip text source: w3schools*/
-    .tooltip .tooltiptext {
+/* Tooltip text source: w3schools*/
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 160px;
     background-color: rgba(0, 0, 0, 0.562);
+    color: #b6b6b6;
     
-    color: #fff;
     text-align: center;
     font-weight: normal;
     font-variant: normal;
     font-size: 0.6em;
     padding: 5px 0;
     border-radius: 6px;
-   
+
     /* Position the tooltip text - see examples below! */
     position: absolute;
     left: 10.2vw;
     z-index: 1;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+}
 
-#navBar{
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
 
+#content-area {
+    position: absolute;
+    left: 10vw;
+    width: 90vw;
+    height: 100vh;
+}
+
+#content-area > * {
+    margin-left: 10px;
+}
+
+#navBar {
+    position: absolute;
     height: 100vh;
     width: 10vw;
-    background-color: #11171A;
-    color: white;
+    background-color: rgb(22, 28, 31);
+    color: #b6b6b6;
 
     border-width:0px 1px 0px 0px;
     border-style:solid;
-    border-color:#484949;
+    border-color:#272727;
 
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
 #navBar .tooltip {
+    background-color: rgb(31, 34, 36);
+    margin-top: 0.5vh;
+    padding: 10px;
+
     font-variant: small-caps;
     font-size: 1.1em;
-    padding: 10px;
     font-weight: bold;
-    background-color: rgb(33, 44, 49);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2px;
+    text-align: right;
+    
+    text-shadow: 3px 2px 0 rgba(0,0,0,0.2);
 
     border-width:0px 1px 0px 0px;
     border-style:solid;
     border-color:rgb(47, 61, 68);
 }
 
-#navBar .tooltip:hover {
+#navBar > a .tooltip {
     margin-left: 0.5vw;
-    background-color: rgb(47, 61, 68);
-    border-color:rgb(57, 74, 82);
+}
+
+#navBar > a .tooltip:hover{
+    background-color: rgb(35, 38, 39);
+    margin-left: 1vw;
+
+    color: rgb(8, 9, 10);
+
+    border-color:rgb(85, 124, 143);
     border-width:0px 1px 0px 1px;
-    color: rgb(24, 31, 34);
+}
+
+#navBar > a .tooltip:active {
+    border-color:rgb(117, 57, 57);
 }
