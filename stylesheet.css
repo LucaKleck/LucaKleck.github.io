@@ -121,13 +121,14 @@ visibility: visible;
     background-color: rgb(35, 38, 39);
     margin-left: 1vw;
 
-    color: rgb(8, 9, 10);
+    color: rgb(121, 141, 151);
 
     border-color:rgb(85, 124, 143);
     border-width:0px 1px 0px 1px;
 }
 
-#navBar > a .tooltip:active {
+#navBar > a:active .tooltip {
+    color:rgb(64, 112, 136);
     border-color:rgb(117, 57, 57);
 }
 
