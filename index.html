@@ -17,6 +17,12 @@
     <script>
     $(function(){
       $("#nav-placeholder").load("nav.html");
+      $("#navBar > a").each( function( index ) {
+            if($( this ).attr("href") == window.location.href) {
+                $( this ).attr("id", "currentPage");
+            }
+      });
+      
     });
     </script>
     <!--end of Navigation bar-->
