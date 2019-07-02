@@ -6,6 +6,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 a {
     color: #b6b6b6;
     font-style: normal;
@@ -25,17 +29,20 @@ a:visited {
     color: #b6b6b6;
 }
 
-canvas {
-    border: solid .2em #707070;
-    height: 80vh;
-}
+.floatingContent {
+    background-color: #f0f0f0;
 
-.player {
-    flex: 1 1 auto;
-}
+    padding: 5px;
 
-.player.local canvas {
-    border-color: rgb(138, 28, 28);
+    border-width:1px;
+    border-style:solid;
+    border-color:#3f3c3c;
+
+    align-self: flex-start;
+
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(24, 9, 9, 0.75);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(24, 9, 9, 0.75);
+    box-shadow: 3px 2px 5px 0px rgba(24, 9, 9, 0.75);
 }
 
 /* Tooltip text source: w3schools*/
@@ -63,16 +70,29 @@ canvas {
 visibility: visible;
 }
 
+.content-area-row {
+    width: 32%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+.content-area-row > *{
+    margin-bottom: 10px;
+}
+
 #content-area {
     position: absolute;
-    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+
     left: 10vw;
     width: 90vw;
-    height: 100vh;
 }
 
 #content-area > * {
-    margin-left: 10px;
+    margin: 0.5%;
 }
 
 #navBar {
