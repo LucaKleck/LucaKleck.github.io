@@ -25,6 +25,19 @@ a:visited {
     color: #b6b6b6;
 }
 
+canvas {
+    border: solid .2em #707070;
+    height: 80vh;
+}
+
+.player {
+    flex: 1 1 auto;
+}
+
+.player.local canvas {
+    border-color: rgb(138, 28, 28);
+}
+
 /* Tooltip text source: w3schools*/
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -52,6 +65,7 @@ visibility: visible;
 
 #content-area {
     position: absolute;
+    display: flex;
     left: 10vw;
     width: 90vw;
     height: 100vh;
@@ -115,4 +129,9 @@ visibility: visible;
 
 #navBar > a .tooltip:active {
     border-color:rgb(117, 57, 57);
+}
+
+#currentPage {
+    background-color: rgb(35, 38, 39);
+    color: rgb(85, 124, 143);
 }

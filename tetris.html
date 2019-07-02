@@ -5,9 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <title>Multiplayer Tetris</title>
+    <title>Luca Kleck github.io</title>
 </head>
 <body>
-    <h1></h1>
+    <div id="navBar">
+        <a href="index.html">
+            <div class="tooltip">
+                Luca Kleck github.io
+            </div>
+        </a>
+        <a href="https://github.com/LucaKleck/est-luca-timo-marc">
+                <div class="tooltip">
+                    TBTD
+                    <span class="tooltiptext">A Turnbased Tower-defense</span>
+                </div>
+            </a>
+        <a href="#">
+            <div class="tooltip" id="currentPage">
+                Tetris
+                <span class="tooltiptext">Multiplayer Tetris</span>
+            </div>
+        </a>
+        <a href="https://discord.gg/CsZp7eG">
+                <div class="tooltip">
+                    Discord
+                    <span class="tooltiptext">My mainstay Discord Server</span>
+                </div>
+        </a>
+    </div>
+    <div id="content-area">
+        <!-- tetris credits currently go to Meth Meth Method's 2016 vidio about tetris network multiplayer-->
+        <template id="player-template">
+            <div class="player">
+                <div class="score"></div>
+                <canvas class="tetris" width="240" height="400"></canvas>
+            </div>
+        </template>
+    
+        <script src="client/connection-manager.js"></script>
+        <script src="client/tetris-manager.js"></script>
+    
+        <script src="client/events.js"></script>
+        <script src="client/arena.js"></script>
+        <script src="client/player.js"></script>
+        <script src="client/tetris.js"></script>
+        <script src="client/main.js"></script>
+    </div>
 </body>
 </html>
+
+
+
