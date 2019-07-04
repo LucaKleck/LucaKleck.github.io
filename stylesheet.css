@@ -70,14 +70,18 @@ a:visited {
 visibility: visible;
 }
 
-.content-area-row {
+.content-area-cell {
     width: 32%;
     flex-wrap: wrap;
     flex-direction: column;
     -webkit-flex-direction: column;
 }
-.content-area-row > *{
+.content-area-cell > *{
     margin-bottom: 10px;
+}
+
+.heading {
+    text-align: center;
 }
 
 #content-area {
