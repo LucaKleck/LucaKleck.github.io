@@ -18,8 +18,8 @@
     $(function(){
       $("#nav-placeholder").load("nav.html");
       $("#navBar > a").each( function( index ) {
-          console.log("Website sees: " . window.location.href)
-          console.log("Href is: " . $( this ).attr("href"))
+          console.log("Website sees: " + window.location.href)
+          console.log("Href is: " + $( this ).attr("href"))
             if($( this ).attr("href") == window.location.href) {
                 $( this ).attr("id", "currentPage");
             }
