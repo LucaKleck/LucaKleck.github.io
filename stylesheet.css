@@ -69,15 +69,31 @@ a:visited {
 visibility: visible;
 }
 
-.content-area-cell {
+.content-area-cell-one-third {
     width: 32.25%;
     flex-wrap: wrap;
     flex-direction: column;
     -webkit-flex-direction: column;
 }
-.content-area-cell > *{
+
+.content-area-cell-two-third {
+    width: 65.5%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.content-area-cell {
+    width: 98.75%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.marginInside > * {
     margin-bottom: 10px;
 }
+
 
 .heading {
     text-align: center;

@@ -18,6 +18,8 @@
     $(function(){
       $("#nav-placeholder").load("nav.html");
       $("#navBar > a").each( function( index ) {
+          console.log("Website sees: " . window.location.href)
+          console.log("Href is: " . $( this ).attr("href"))
             if($( this ).attr("href") == window.location.href) {
                 $( this ).attr("id", "currentPage");
             }
@@ -29,7 +31,7 @@
     
     <div id="content-area">
 
-        <div class="content-area-cell">
+        <div class="content-area-cell-one-third marginInside">
             <div class="floatingContent">
                 <h1>Github IO</h1>
                 <p>
@@ -38,7 +40,8 @@
                 </p>
             </div>
         </div>
-        <div class="content-area-cell">
+
+        <div class="content-area-cell-one-third marginInside">
             <div class="floatingContent">
                 <h1>Discord</h1>
                 <p>
@@ -46,7 +49,8 @@
                 </p>
             </div>
         </div>
-        <div class="content-area-cell">
+
+        <div class="content-area-cell-one-third marginInside">
             <div class="floatingContent">
                 <h1>About me</h1>
                 <p>
@@ -55,7 +59,7 @@
             </div>
         </div>
 
-        <div class="content-area-cell">
+        <div class="content-area-cell-two-third marginInside">
             <div class="floatingContent heading">
                 <h1>My Projects</h1>
             </div>
@@ -72,6 +76,7 @@
                 </p>
             </div>
         </div>
+
     </div>
     
 </body>
