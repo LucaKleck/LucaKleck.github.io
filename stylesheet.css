@@ -42,6 +42,8 @@ a:visited {
     -webkit-box-shadow: 3px 2px 5px 0px rgba(24, 9, 9, 0.75);
     -moz-box-shadow: 3px 2px 5px 0px rgba(24, 9, 9, 0.75);
     box-shadow: 3px 2px 5px 0px rgba(24, 9, 9, 0.75);
+
+    z-index: 0;
 }
 
 /* Tooltip text source: w3schools*/
